@@ -1,0 +1,1 @@
+win32\Debug\ManglerSource.exe --editor

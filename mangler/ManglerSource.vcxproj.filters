@@ -1,0 +1,941 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\Configuration">
+      <UniqueIdentifier>{bd365062-dd72-438b-9ef7-c0db5b21ac4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Editor">
+      <UniqueIdentifier>{f96b694e-911e-4230-a4ae-96180cbdb976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{93014dc1-caca-423c-ba45-2a2264234bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{3ea207d9-54b2-40a0-afce-911ab10ea3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Importers">
+      <UniqueIdentifier>{864ff705-11d7-404c-ad26-ce7e60ba4818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{ffc7d8d6-a645-4a01-9de9-2bcc1b236e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh">
+      <UniqueIdentifier>{ef620f37-2413-4d93-a249-0e6deff3de66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{ee1fdd1e-9e09-4189-9d55-c5b42396affa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Qt">
+      <UniqueIdentifier>{f9ac7ea7-3c50-43cd-b827-1eefc2a87b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Testing">
+      <UniqueIdentifier>{f6ac3ca6-6d1b-4cdc-9c72-5e1731fe4c64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh\HalfEdge">
+      <UniqueIdentifier>{ceb10908-cd0c-4f56-930b-4be26e291f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mesh\Partitioning">
+      <UniqueIdentifier>{ec2821c5-d573-4fbf-b1bf-f8fb8377a01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Importers\Wavefront">
+      <UniqueIdentifier>{05ca8cab-f10c-4241-af31-5e6ab729b414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\ThirdParty">
+      <UniqueIdentifier>{11466c60-2325-4bac-955f-99406d9e74fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Configuration">
+      <UniqueIdentifier>{53435c43-6711-49eb-b6f4-380ccecda4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor">
+      <UniqueIdentifier>{aed2b72c-91d4-4af7-b7a5-2e8b84b974ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{fc5f9681-e25d-4c16-8c59-71c7c763e934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{5cabf488-30f6-43bc-a94f-fae828a38954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{ab161124-50c5-4b04-9c7a-063143f90341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh">
+      <UniqueIdentifier>{c64d35ec-2d1f-4bad-ae1b-155e825e8bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh\HalfEdge">
+      <UniqueIdentifier>{e6976556-016b-4f48-869b-2fadc59c9ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mesh\Partitioning">
+      <UniqueIdentifier>{8647c1ef-3c75-4939-848e-81ecd7d05181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{7ab121c5-6796-4278-ac4e-af80bd4e6401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Qt">
+      <UniqueIdentifier>{a9fa3659-b490-4279-b471-de4a53eaf5d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\ThirdParty\Box2D">
+      <UniqueIdentifier>{70d8186f-503d-4b9d-982b-dab45c9378ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\ThirdParty\XPath3">
+      <UniqueIdentifier>{64725ad1-c22d-43b3-8265-0c01a5760001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Database">
+      <UniqueIdentifier>{73aa3f63-1e34-46ee-9fc4-9a75d4bd0d47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManglerSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ManglerSource.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ManglerSource.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_ManglerSource.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Compute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainFrame.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainFrame.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nullable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCanvasTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="GameConfParser.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSystem.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawToolWidget.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorApplication.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureToolWidget.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineApplication.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelProvider.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApplication.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorLib.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="ColourRGBA.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Colour.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="MathHelpers.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="NoiseHelpers.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2i.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexedTriangleSet.cpp">
+      <Filter>Source Files\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad.cpp">
+      <Filter>Source Files\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="HalfEdgeMesh.cpp">
+      <Filter>Source Files\Mesh\HalfEdge</Filter>
+    </ClCompile>
+    <ClCompile Include="HE_AdjacencyList.cpp">
+      <Filter>Source Files\Mesh\HalfEdge</Filter>
+    </ClCompile>
+    <ClCompile Include="HE_Edge.cpp">
+      <Filter>Source Files\Mesh\HalfEdge</Filter>
+    </ClCompile>
+    <ClCompile Include="HE_Face.cpp">
+      <Filter>Source Files\Mesh\HalfEdge</Filter>
+    </ClCompile>
+    <ClCompile Include="HE_Pair.cpp">
+      <Filter>Source Files\Mesh\HalfEdge</Filter>
+    </ClCompile>
+    <ClCompile Include="HE_Vertex.cpp">
+      <Filter>Source Files\Mesh\HalfEdge</Filter>
+    </ClCompile>
+    <ClCompile Include="AABB.cpp">
+      <Filter>Source Files\Mesh\Partitioning</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryReader.cpp">
+      <Filter>Source Files\Mesh\Partitioning</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryWriter.cpp">
+      <Filter>Source Files\Mesh\Partitioning</Filter>
+    </ClCompile>
+    <ClCompile Include="Octree.cpp">
+      <Filter>Source Files\Mesh\Partitioning</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadtree.cpp">
+      <Filter>Source Files\Mesh\Partitioning</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>Source Files\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="QSFMLCanvas.cpp">
+      <Filter>Source Files\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCanvas.cpp">
+      <Filter>Source Files\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2BlockAllocator.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Body.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2BroadPhase.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2ChainAndCircleContact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2ChainAndPolygonContact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2ChainShape.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2CircleContact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2CircleShape.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2CollideCircle.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2CollideEdge.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2CollidePolygon.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Collision.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Contact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2ContactManager.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2ContactSolver.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Distance.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2DistanceJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Draw.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2DynamicTree.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2EdgeAndCircleContact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2EdgeAndPolygonContact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2EdgeShape.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Fixture.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2FrictionJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2GearJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Island.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Joint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Math.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2MotorJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2MouseJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2PolygonAndCircleContact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2PolygonContact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2PolygonShape.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2PrismaticJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2PulleyJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2RevoluteJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Rope.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2RopeJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Settings.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2StackAllocator.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2TimeOfImpact.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2Timer.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2WeldJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2WheelJoint.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2World.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2D\b2WorldCallbacks.cpp">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\EvalEngine.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\ExprEval.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\ExprFunctions.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\ExprParser.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\ExprToken.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\ExprTree.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\ExprTreeNode.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\stdafx.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\Text.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\xh_scanner.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XmlParser.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XmlParserMemoryPool.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathDynamicEnv.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathItem.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathNode.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathQName.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathSequence.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathStaticEnv.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathTerm.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XPathVar.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="XPath3\XSDType.cpp">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathr.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ManglerSource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ManglerSource.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ManglerSource.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainFrame.h">
+      <Filter>Header Files\Qt</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_ManglerSource.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Compute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Nullable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCanvasTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="AABB.h">
+      <Filter>Header Files\Mesh\Partitioning</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryReader.h">
+      <Filter>Header Files\Mesh\Partitioning</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryWriter.h">
+      <Filter>Header Files\Mesh\Partitioning</Filter>
+    </ClInclude>
+    <ClInclude Include="Octree.h">
+      <Filter>Header Files\Mesh\Partitioning</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadtree.h">
+      <Filter>Header Files\Mesh\Partitioning</Filter>
+    </ClInclude>
+    <ClInclude Include="HalfEdgeMesh.h">
+      <Filter>Header Files\Mesh\HalfEdge</Filter>
+    </ClInclude>
+    <ClInclude Include="HE_AdjacencyList.h">
+      <Filter>Header Files\Mesh\HalfEdge</Filter>
+    </ClInclude>
+    <ClInclude Include="HE_Edge.h">
+      <Filter>Header Files\Mesh\HalfEdge</Filter>
+    </ClInclude>
+    <ClInclude Include="HE_Face.h">
+      <Filter>Header Files\Mesh\HalfEdge</Filter>
+    </ClInclude>
+    <ClInclude Include="HE_Pair.h">
+      <Filter>Header Files\Mesh\HalfEdge</Filter>
+    </ClInclude>
+    <ClInclude Include="HE_Vertex.h">
+      <Filter>Header Files\Mesh\HalfEdge</Filter>
+    </ClInclude>
+    <ClInclude Include="CoorinateSet.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedQuadSet.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedTriangleSet.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedSet.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshBuffer.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Byte.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Colour.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourRGBA.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHelpers.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="NoiseHelpers.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2i.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorLib.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHelpersh.h">
+      <Filter>Header Files\Importers\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="ParserState.h">
+      <Filter>Header Files\Importers\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="WavefrontEnums.h">
+      <Filter>Header Files\Importers\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="WavefrontOBJMeshImporter.h">
+      <Filter>Header Files\Importers\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="WOBJ_Face.h">
+      <Filter>Header Files\Importers\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="WOBJ_Group.h">
+      <Filter>Header Files\Importers\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="WOBJ_Mesh.h">
+      <Filter>Header Files\Importers\Wavefront</Filter>
+    </ClInclude>
+    <ClInclude Include="Collidable.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApplication.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineApplication.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelProvider.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawToolWidget.h">
+      <Filter>Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor.h">
+      <Filter>Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorApplication.h">
+      <Filter>Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.h">
+      <Filter>Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureToolWidget.h">
+      <Filter>Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Widget.h">
+      <Filter>Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConfig.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConfParser.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSystem.h">
+      <Filter>Header Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSettings.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2BlockAllocator.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Body.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2BroadPhase.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2ChainAndCircleContact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2ChainAndPolygonContact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2ChainShape.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2CircleContact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2CircleShape.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Collision.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Contact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2ContactManager.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2ContactSolver.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Distance.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2DistanceJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Draw.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2DynamicTree.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2EdgeAndCircleContact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2EdgeAndPolygonContact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2EdgeShape.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Fixture.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2FrictionJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2GearJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2GrowableStack.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Island.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Joint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Math.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2MotorJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2MouseJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2PolygonAndCircleContact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2PolygonContact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2PolygonShape.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2PrismaticJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2PulleyJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2RevoluteJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Rope.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2RopeJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Settings.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Shape.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2StackAllocator.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2TimeOfImpact.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2Timer.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2TimeStep.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2WeldJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2WheelJoint.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2World.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\b2WorldCallbacks.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2D\Box2D.h">
+      <Filter>Header Files\Engine\ThirdParty\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\CXPathNode.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\EvalEngine.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\ExprToken.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\ExprTree.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\ExprTreeNode.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\stdafx.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\Text.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\xh_scanner.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XmlParser.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XmlParserMemoryPool.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathDynamicEnv.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathItem.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathNamespace.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathNode.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathQName.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathSequence.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathStaticEnv.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathTerm.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XPathVar.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="XPath3\XSDType.h">
+      <Filter>Header Files\Engine\ThirdParty\XPath3</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathr.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="QSFMLCanvas.h">
+      <Filter>Header Files\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexAttributes.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceAttributes.h">
+      <Filter>Header Files\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCanvas.h">
+      <Filter>Header Files\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentDb.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="testing.h">
+      <Filter>Header Files\Testing</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scanline.cl" />
+    <None Include="test_fs.glsl" />
+    <None Include="test_vs.glsl" />
+    <None Include="Game.ini" />
+  </ItemGroup>
+</Project>

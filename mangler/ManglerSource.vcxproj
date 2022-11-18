@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <ProjectName>ManglerSource</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;SFML_STATIC;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(SolutionDir)GLEW\include;$(SolutionDir)GLFW\include;$(INTELOCLSDKROOT)\include;$(SolutionDir)\SFML-2.4.2\include;$(SolutionDir)SFML-2.4.2\src;$(SolutionDir)\TGUI-0.7.4-vc14-32bit-for-SFML-2.4.2\TGUI-0.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(INTELOCLSDKROOT)\lib\x86;$(SolutionDir)SFML-2.4.2\build\vc15\lib\Debug;$(SolutionDir)GLFW\build\vc15\src\Debug\;$(SolutionDir)GLEW\build\vc15\lib\Debug\;$(SolutionDir)SFML-2.4.2\extlibs\libs-msvc-universal\x86;$(SolutionDir)TGUI-0.7.4-vc14-32bit-for-SFML-2.4.2\TGUI-0.7\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;tgui-s-d.lib;glfw3sd.lib;glew32sd.lib;opengl32.lib;opencl.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;freetype.lib;jpeg.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AABB.cpp" />
+    <ClCompile Include="BinaryReader.cpp" />
+    <ClCompile Include="BinaryWriter.cpp" />
+    <ClCompile Include="Box2D\b2BlockAllocator.cpp" />
+    <ClCompile Include="Box2D\b2Body.cpp" />
+    <ClCompile Include="Box2D\b2BroadPhase.cpp" />
+    <ClCompile Include="Box2D\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="Box2D\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="Box2D\b2ChainShape.cpp" />
+    <ClCompile Include="Box2D\b2CircleContact.cpp" />
+    <ClCompile Include="Box2D\b2CircleShape.cpp" />
+    <ClCompile Include="Box2D\b2CollideCircle.cpp" />
+    <ClCompile Include="Box2D\b2CollideEdge.cpp" />
+    <ClCompile Include="Box2D\b2CollidePolygon.cpp" />
+    <ClCompile Include="Box2D\b2Collision.cpp" />
+    <ClCompile Include="Box2D\b2Contact.cpp" />
+    <ClCompile Include="Box2D\b2ContactManager.cpp" />
+    <ClCompile Include="Box2D\b2ContactSolver.cpp" />
+    <ClCompile Include="Box2D\b2Distance.cpp" />
+    <ClCompile Include="Box2D\b2DistanceJoint.cpp" />
+    <ClCompile Include="Box2D\b2Draw.cpp" />
+    <ClCompile Include="Box2D\b2DynamicTree.cpp" />
+    <ClCompile Include="Box2D\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="Box2D\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="Box2D\b2EdgeShape.cpp" />
+    <ClCompile Include="Box2D\b2Fixture.cpp" />
+    <ClCompile Include="Box2D\b2FrictionJoint.cpp" />
+    <ClCompile Include="Box2D\b2GearJoint.cpp" />
+    <ClCompile Include="Box2D\b2Island.cpp" />
+    <ClCompile Include="Box2D\b2Joint.cpp" />
+    <ClCompile Include="Box2D\b2Math.cpp" />
+    <ClCompile Include="Box2D\b2MotorJoint.cpp" />
+    <ClCompile Include="Box2D\b2MouseJoint.cpp" />
+    <ClCompile Include="Box2D\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="Box2D\b2PolygonContact.cpp" />
+    <ClCompile Include="Box2D\b2PolygonShape.cpp" />
+    <ClCompile Include="Box2D\b2PrismaticJoint.cpp" />
+    <ClCompile Include="Box2D\b2PulleyJoint.cpp" />
+    <ClCompile Include="Box2D\b2RevoluteJoint.cpp" />
+    <ClCompile Include="Box2D\b2Rope.cpp" />
+    <ClCompile Include="Box2D\b2RopeJoint.cpp" />
+    <ClCompile Include="Box2D\b2Settings.cpp" />
+    <ClCompile Include="Box2D\b2StackAllocator.cpp" />
+    <ClCompile Include="Box2D\b2TimeOfImpact.cpp" />
+    <ClCompile Include="Box2D\b2Timer.cpp" />
+    <ClCompile Include="Box2D\b2WeldJoint.cpp" />
+    <ClCompile Include="Box2D\b2WheelJoint.cpp" />
+    <ClCompile Include="Box2D\b2World.cpp" />
+    <ClCompile Include="Box2D\b2WorldCallbacks.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Colour.cpp" />
+    <ClCompile Include="ColourRGBA.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Compute.cpp" />
+    <ClCompile Include="DrawToolWidget.cpp" />
+    <ClCompile Include="EditorApplication.cpp" />
+    <ClCompile Include="EngineApplication.cpp" />
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="GameApplication.cpp" />
+    <ClCompile Include="GameConfParser.cpp" />
+    <ClCompile Include="GameSystem.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainFrame.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ManglerSource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_ManglerSource.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainFrame.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ManglerSource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="HalfEdgeMesh.cpp" />
+    <ClCompile Include="HE_AdjacencyList.cpp" />
+    <ClCompile Include="HE_Edge.cpp" />
+    <ClCompile Include="HE_Face.cpp" />
+    <ClCompile Include="HE_Pair.cpp" />
+    <ClCompile Include="HE_Vertex.cpp" />
+    <ClCompile Include="HUD.cpp" />
+    <ClCompile Include="IndexedTriangleSet.cpp" />
+    <ClCompile Include="IOHelpers.cpp" />
+    <ClCompile Include="LevelProvider.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="ManglerSource.cpp" />
+    <ClCompile Include="Mathr.cpp" />
+    <ClCompile Include="MathHelpers.cpp" />
+    <ClCompile Include="Matrix4.cpp" />
+    <ClCompile Include="NoiseHelpers.cpp" />
+    <ClCompile Include="Nullable.cpp" />
+    <ClCompile Include="Octree.cpp" />
+    <ClCompile Include="PrimitiveProcessor.cpp" />
+    <ClCompile Include="QSFMLCanvas.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="Quadtree.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="Ray.cpp" />
+    <ClCompile Include="RenderCanvas.cpp" />
+    <ClCompile Include="RenderCanvasTest.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RenderingContext.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TextureToolWidget.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector2i.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector4.cpp" />
+    <ClCompile Include="VectorLib.cpp" />
+    <ClCompile Include="Widget.cpp" />
+    <ClCompile Include="XPath3\EvalEngine.cpp" />
+    <ClCompile Include="XPath3\ExprEval.cpp" />
+    <ClCompile Include="XPath3\ExprFunctions.cpp" />
+    <ClCompile Include="XPath3\ExprParser.cpp" />
+    <ClCompile Include="XPath3\ExprToken.cpp" />
+    <ClCompile Include="XPath3\ExprTree.cpp" />
+    <ClCompile Include="XPath3\ExprTreeNode.cpp" />
+    <ClCompile Include="XPath3\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="XPath3\Text.cpp" />
+    <ClCompile Include="XPath3\xh_scanner.cpp" />
+    <ClCompile Include="XPath3\XmlParser.cpp" />
+    <ClCompile Include="XPath3\XmlParserMemoryPool.cpp" />
+    <ClCompile Include="XPath3\XPathDynamicEnv.cpp" />
+    <ClCompile Include="XPath3\XPathItem.cpp" />
+    <ClCompile Include="XPath3\XPathNode.cpp" />
+    <ClCompile Include="XPath3\XPathQName.cpp" />
+    <ClCompile Include="XPath3\XPathSequence.cpp" />
+    <ClCompile Include="XPath3\XPathStaticEnv.cpp" />
+    <ClCompile Include="XPath3\XPathTerm.cpp" />
+    <ClCompile Include="XPath3\XPathVar.cpp" />
+    <ClCompile Include="XPath3\XSDType.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ManglerSource.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ManglerSource.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DSFML_STATIC -DGLEW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_MBCS  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)GLEW\include" "-I$(SolutionDir)GLFW\include" "-I$(INTELOCLSDKROOT)\include" "-I$(SolutionDir)\SFML-2.4.2\include" "-I$(SolutionDir)SFML-2.4.2\src" "-I$(SolutionDir)\TGUI-0.7.4-vc14-32bit-for-SFML-2.4.2\TGUI-0.7\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ManglerSource.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ManglerSource.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AABB.h" />
+    <ClInclude Include="BinaryReader.h" />
+    <ClInclude Include="BinaryWriter.h" />
+    <ClInclude Include="Box2D\b2BlockAllocator.h" />
+    <ClInclude Include="Box2D\b2Body.h" />
+    <ClInclude Include="Box2D\b2BroadPhase.h" />
+    <ClInclude Include="Box2D\b2ChainAndCircleContact.h" />
+    <ClInclude Include="Box2D\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="Box2D\b2ChainShape.h" />
+    <ClInclude Include="Box2D\b2CircleContact.h" />
+    <ClInclude Include="Box2D\b2CircleShape.h" />
+    <ClInclude Include="Box2D\b2Collision.h" />
+    <ClInclude Include="Box2D\b2Contact.h" />
+    <ClInclude Include="Box2D\b2ContactManager.h" />
+    <ClInclude Include="Box2D\b2ContactSolver.h" />
+    <ClInclude Include="Box2D\b2Distance.h" />
+    <ClInclude Include="Box2D\b2DistanceJoint.h" />
+    <ClInclude Include="Box2D\b2Draw.h" />
+    <ClInclude Include="Box2D\b2DynamicTree.h" />
+    <ClInclude Include="Box2D\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="Box2D\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="Box2D\b2EdgeShape.h" />
+    <ClInclude Include="Box2D\b2Fixture.h" />
+    <ClInclude Include="Box2D\b2FrictionJoint.h" />
+    <ClInclude Include="Box2D\b2GearJoint.h" />
+    <ClInclude Include="Box2D\b2GrowableStack.h" />
+    <ClInclude Include="Box2D\b2Island.h" />
+    <ClInclude Include="Box2D\b2Joint.h" />
+    <ClInclude Include="Box2D\b2Math.h" />
+    <ClInclude Include="Box2D\b2MotorJoint.h" />
+    <ClInclude Include="Box2D\b2MouseJoint.h" />
+    <ClInclude Include="Box2D\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="Box2D\b2PolygonContact.h" />
+    <ClInclude Include="Box2D\b2PolygonShape.h" />
+    <ClInclude Include="Box2D\b2PrismaticJoint.h" />
+    <ClInclude Include="Box2D\b2PulleyJoint.h" />
+    <ClInclude Include="Box2D\b2RevoluteJoint.h" />
+    <ClInclude Include="Box2D\b2Rope.h" />
+    <ClInclude Include="Box2D\b2RopeJoint.h" />
+    <ClInclude Include="Box2D\b2Settings.h" />
+    <ClInclude Include="Box2D\b2Shape.h" />
+    <ClInclude Include="Box2D\b2StackAllocator.h" />
+    <ClInclude Include="Box2D\b2TimeOfImpact.h" />
+    <ClInclude Include="Box2D\b2Timer.h" />
+    <ClInclude Include="Box2D\b2TimeStep.h" />
+    <ClInclude Include="Box2D\b2WeldJoint.h" />
+    <ClInclude Include="Box2D\b2WheelJoint.h" />
+    <ClInclude Include="Box2D\b2World.h" />
+    <ClInclude Include="Box2D\b2WorldCallbacks.h" />
+    <ClInclude Include="Box2D\Box2D.h" />
+    <ClInclude Include="Byte.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Collidable.h" />
+    <ClInclude Include="Colour.h" />
+    <ClInclude Include="ColourRGBA.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Compute.h" />
+    <ClInclude Include="ContentDb.h" />
+    <ClInclude Include="CoorinateSet.h" />
+    <ClInclude Include="DrawToolWidget.h" />
+    <ClInclude Include="Editor.h" />
+    <ClInclude Include="EditorApplication.h" />
+    <ClInclude Include="EngineApplication.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="FaceAttributes.h" />
+    <ClInclude Include="FileHelpersh.h" />
+    <ClInclude Include="GameApplication.h" />
+    <ClInclude Include="GameConfig.h" />
+    <ClInclude Include="GameConfParser.h" />
+    <ClInclude Include="GameSystem.h" />
+    <ClInclude Include="GeneratedFiles\ui_ManglerSource.h" />
+    <ClInclude Include="HalfEdgeMesh.h" />
+    <ClInclude Include="HE_AdjacencyList.h" />
+    <ClInclude Include="HE_Edge.h" />
+    <ClInclude Include="HE_Face.h" />
+    <ClInclude Include="HE_Pair.h" />
+    <ClInclude Include="HE_Vertex.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="IndexedQuadSet.h" />
+    <ClInclude Include="IndexedSet.h" />
+    <ClInclude Include="IndexedTriangleSet.h" />
+    <ClInclude Include="IOHelpers.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LevelProvider.h" />
+    <ClInclude Include="XPath3\CXPathNode.h" />
+    <ClInclude Include="XPath3\EvalEngine.h" />
+    <ClInclude Include="XPath3\ExprToken.h" />
+    <ClInclude Include="XPath3\ExprTree.h" />
+    <ClInclude Include="XPath3\ExprTreeNode.h" />
+    <ClInclude Include="XPath3\stdafx.h" />
+    <ClInclude Include="XPath3\Text.h" />
+    <ClInclude Include="XPath3\xh_scanner.h" />
+    <ClInclude Include="XPath3\XmlParser.h" />
+    <ClInclude Include="XPath3\XmlParserMemoryPool.h" />
+    <ClInclude Include="XPath3\XPathDynamicEnv.h" />
+    <ClInclude Include="XPath3\XPathItem.h" />
+    <ClInclude Include="XPath3\XPathNamespace.h" />
+    <ClInclude Include="XPath3\XPathNode.h" />
+    <ClInclude Include="XPath3\XPathQName.h" />
+    <ClInclude Include="XPath3\XPathSequence.h" />
+    <ClInclude Include="XPath3\XPathStaticEnv.h" />
+    <ClInclude Include="XPath3\XPathTerm.h" />
+    <ClInclude Include="XPath3\XPathVar.h" />
+    <ClInclude Include="XPath3\XSDType.h" />
+    <CustomBuild Include="MainFrame.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MainFrame.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DSFML_STATIC -DGLEW_STATIC -D_CRT_SECURE_NO_WARNINGS -D_MBCS  "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtWidgets" "-I$(SolutionDir)GLEW\include" "-I$(SolutionDir)GLFW\include" "-I$(INTELOCLSDKROOT)\include" "-I$(SolutionDir)\SFML-2.4.2\include" "-I$(SolutionDir)SFML-2.4.2\src" "-I$(SolutionDir)\TGUI-0.7.4-vc14-32bit-for-SFML-2.4.2\TGUI-0.7\include"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MainFrame.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <ClInclude Include="Mathr.h" />
+    <ClInclude Include="MathHelpers.h" />
+    <ClInclude Include="Matrix4.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshBuffer.h" />
+    <ClInclude Include="NoiseHelpers.h" />
+    <ClInclude Include="Nullable.h" />
+    <ClInclude Include="Octree.h" />
+    <ClInclude Include="ParserState.h" />
+    <ClInclude Include="PrimitiveProcessor.h" />
+    <ClInclude Include="QSFMLCanvas.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="Quadtree.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="RenderCanvas.h" />
+    <ClInclude Include="RenderCanvasTest.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RenderingContext.h" />
+    <ClInclude Include="testing.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TextureToolWidget.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector2i.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
+    <ClInclude Include="VectorLib.h" />
+    <ClInclude Include="VertexAttributes.h" />
+    <ClInclude Include="WavefrontEnums.h" />
+    <ClInclude Include="WavefrontOBJMeshImporter.h" />
+    <ClInclude Include="Widget.h" />
+    <ClInclude Include="WOBJ_Face.h" />
+    <ClInclude Include="WOBJ_Group.h" />
+    <ClInclude Include="WOBJ_Mesh.h" />
+    <ClInclude Include="WorldSettings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ManglerSource.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Game.ini" />
+    <None Include="scanline.cl" />
+    <None Include="test_fs.glsl" />
+    <None Include="test_vs.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="Qt5 vs2015" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
